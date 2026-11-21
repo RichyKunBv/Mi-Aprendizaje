@@ -105,7 +105,7 @@ lin_reg_4.fit(X_poly4,y)
 
 #Para que no se vean lospunto unidos ppor rectas `podemos suavizar agregando mas puntos.
 #.1 soon los intervalos
-X_grid = np.arange(min(X),max(X), 0.1)
+X_grid = np.arange(X.min(),X.max(), 0.1)
 #Tranformas el filas, X_grid y el numero de columnas
 X_grid = X_grid.reshape(len(X_grid),1)
 
